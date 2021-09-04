@@ -13,9 +13,9 @@
 <div class="header">
     <div class="container_menu">
         <div class="header__body">
-            <a href="" class="header__logo">
-                <img src="./src/img/no_avatar.jpg" alt="">
-            </a>
+<!--            <a href="" class="header__logo">-->
+<!--                <img src="./src/img/no_avatar.jpg" alt="">-->
+<!--            </a>-->
             <div class="header__burger">
                 <span>
                 </span>
