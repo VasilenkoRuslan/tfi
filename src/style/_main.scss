@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+//font-family: 'Lato', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+//font-family: 'Neuton', serif;
+
+//global
+body {
+  margin: 0;
+  background-color: #bfbebd;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 19px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+h6 {
+  font-size: 11px;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.container {
+  background-color: #fdfdfc;
+  box-shadow: rgba(100, 100, 111, 0.9) 0 21px 87px 0;
+  width: 100%;
+  max-width: 1180px;
+  min-width: 320px;
+  margin: 0 auto 50px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  margin: 100px auto;
+}
