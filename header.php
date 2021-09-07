@@ -25,6 +25,8 @@
                     <li class="header__link"><a href="./">home</a></li>
                     <li class="header__link"><a href="./cv.php">cv</a></li>
                     <li class="header__link"><a href="./tfi.form.php">form</a></li>
+                    <li class="header__link"><a href="./registration.php">registration</a></li>
+                    <li class="header__link"><a href="./login.php">login</a></li>
                 </ul>
             </nav>
         </div>

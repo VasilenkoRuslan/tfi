@@ -5,19 +5,19 @@
                 <div class="field">
                     <label for="name" class="col-sm-2">Name</label>
                     <div class="field-right">
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" class="input_style">
                     </div>
                 </div>
                 <div class="field">
                     <label for="mail">Mail</label>
                     <div class="field-right">
-                        <input type="email" id="mail" name="mail">
+                        <input type="email" id="mail" name="mail" class="input_style">
                     </div>
                 </div>
                 <div class="field">
                     <label for="password">Password</label>
                     <div class="field-right">
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" class="input_style">
                     </div>
                 </div>
                 <div class="field">
@@ -30,7 +30,7 @@
                 <div class="field">
                     <label for="birthday">Birthday</label>
                     <div class="field-right">
-                        <input type="date" id="birthday" name="birthday">
+                        <input type="date" id="birthday" name="birthday" class="input_style">
                     </div>
                 </div>
                 <div class="field">
@@ -67,15 +67,13 @@
                 <div class="field">
                     <label for="photo">Photo</label>
                     <div class="field-right">
-                        <!--                <fieldset>-->
-                        <input type="file" name="photo">
-                        <!--                </fieldset>-->
+                        <input type="file" name="photo" class="input_style">
                     </div>
                 </div>
                 <div class="field">
                     <label for="hobbies">Hobbies</label>
                     <div class="field-right">
-                        <select name="hobbies" id="hobbies" multiple>
+                        <select name="hobbies" id="hobbies" multiple class="input_style">
                             <option value="movies">Movies</option>
                             <option value="music">Music</option>
                             <option value="cooking">Cooking</option>
@@ -88,7 +86,7 @@
                 <div class="field">
                     <label for="someWords">Some words</label>
                     <div class="field-right">
-                        <textarea name="someWords" id="someWords"></textarea>
+                        <textarea name="someWords" id="someWords" class="input_style"></textarea>
                     </div>
                 </div>
                 <div class="field"><label for="agree"></label>

@@ -22,19 +22,14 @@
         max-width: 100%;
         font-size: 16px;
 
-        input[name=name],
-        input[name=mail],
-        input[name=birthday],
-        input[name=password],
-        select[name=hobbies],
-        textarea[name=someWords],
-        input[name=photo] {
+        .input_style {
           width: 100%;
           border: 2px solid #aaa;
           box-shadow: 1px 1px 2px 0 #aaa;
           border-radius: 5px;
           height: 32px;
           vertical-align: middle;
+          padding-left: 10px;
         }
 
         input,
@@ -57,6 +52,7 @@
           vertical-align: middle;
           background-color: #fff;
           margin-right: 3px;
+          padding-left: 10px;
         }
 
         input[name=contact2-name],
