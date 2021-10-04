@@ -1,4 +1,3 @@
- <?php require_once 'header.php'?>
     <div class="content">
         <div class="container">
             <form action="#" method="post" enctype="multipart/form-data">
@@ -105,4 +104,3 @@
         </div>
     </div>
 </section>
-<?php require_once './footer.php';

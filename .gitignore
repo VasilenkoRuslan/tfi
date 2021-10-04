@@ -5,3 +5,5 @@ node_modules/
 # ignore log files and databases
 *.iml
 *.log
+# ignire files with DB data login
+credentials.php
