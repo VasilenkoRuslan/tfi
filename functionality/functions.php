@@ -34,15 +34,13 @@ function pwdMatch($pwd, $pwdRepeat) {
 }
 
 function uidExists($username, $email) {
+    $conn = include './db_connection.php';
+
     $query = 'SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;';
-    $conn = mysqlConnect();
-    var_dump($conn);
+
     $stmt = mysqli_stmt_init($conn);
-    var_dump($stmt);
-    var_dump($_SERVER['HTTP_HOST']);
-    if ($res = !mysqli_stmt_prepare($stmt, $query)) {
-        var_dump($res);
-//        header("location: ..?page=register&error=stmtfailed111");
+    if (!mysqli_stmt_prepare($stmt, $query)) {
+        header("location: ..?page=register&error=stmtfailed111");
         exit();
     }
 
@@ -61,8 +59,10 @@ function uidExists($username, $email) {
 }
 
 function createUser($firstname, $lastname, $email, $username, $pwd) {
+    $conn = include './db_connection.php';
+
     $query = "INSERT INTO users (usersFirstName, usersLastName, usersEmail, usersUid, usersPwd) VALUES (?, ?, ?, ?, ?)";
-    $conn = mysqlConnect();
+
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $query)) {
         header("location: ..?page=register&error=stmtfailed2");

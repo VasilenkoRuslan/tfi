@@ -33,5 +33,45 @@
                 </label>
             </form>
         </div>
-        <p class="after_registration">Already have an account? <a href="login.php" class="link_sing_in">Sing in</a></p>
+        <p class="after_registration">Already have an account? <a href="?page=login" class="link_sing_in">Sing in</a></p>
+        <p class="after_registration">
+    <?php
+        if (isset($_GET["error"])) {
+            if ($_GET["error"] == "emptyinput") { ?>
+                Fill in all fields!
+                <?php
+            }
+            if ($_GET["error"] == "invaliduid") { ?>
+                Fill in all fields!
+                <?php
+            }
+            if ($_GET["error"] == "invalidemail") { ?>
+                Choose a proper username!
+                <?php
+            }
+            if ($_GET["error"] == "passwordsdontmatch") { ?>
+                Passwords doesn't match!
+                <?php
+            }
+            if ($_GET["error"] == "usernametaken") { ?>
+                Username already taken!
+                <?php
+            }
+            if ($_GET["error"] == "stmtfailed111") { ?>
+                Something went wrong, try again!
+                <?php
+            }
+            if ($_GET["error"] == "stmtfailed2") { ?>
+                Something went wrong, try again!
+                <?php
+            }
+            if ($_GET["error"] == "none") { ?>
+                You have signed up!
+                <?php
+            }
+        }
+    ?>
+        </p>
     </div>
+
+

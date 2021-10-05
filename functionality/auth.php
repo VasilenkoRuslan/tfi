@@ -7,7 +7,6 @@ if (isset($_POST["submit"])) {
    $pwd = $_POST["pwd"];
    $pwdRepeat = $_POST["pwd_repeat"];
 
-    require_once './db_connection.php';
     require_once './functions.php';
 
     if (emptyInputSignup($firstname, $lastname, $email, $username, $pwd, $pwdRepeat) !== false) {
