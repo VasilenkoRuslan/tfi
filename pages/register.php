@@ -29,7 +29,7 @@
                     <label for="accept">I accept the <a href="#" class="c_green">Terms of Use</a> & <a href="#" class="c_green">Privacy Policy</a>.</label>
                 </div>
                 <label for="btn_registr">
-                    <input type="submit" name="submit" id="btn_registr" class="btn btn_green full" value="Register Now">
+                    <input type="submit" name="register" id="btn_registr" class="btn btn_green full" value="Register Now">
                 </label>
             </form>
         </div>

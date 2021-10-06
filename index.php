@@ -1,6 +1,6 @@
 <?php if (!empty($_GET['page'])) {
     $page_name = $_GET['page']; ?>
-<!--    --><?php //include './functionality/db_connection.php' ?>
+
     <?php require_once 'header.php' ?>
     <?php require_once './pages/menu.php'; ?>
     <?php

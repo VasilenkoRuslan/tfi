@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST["submit"])) {
+if (isset($_POST["register"])) {
    $firstname = $_POST["first_name"];
    $lastname = $_POST["last_name"];
    $email = $_POST["mail"];
@@ -32,6 +32,26 @@ if (isset($_POST["submit"])) {
 
     createUser($firstname, $lastname, $email, $username, $pwd);
 
+} else if (isset($_POST["login"])) {
+    $username = $_POST["uid"];
+    $pwd = $_POST["pwd"];
+
+    require_once './functions.php';
+
+    if (emptyInputLogin($username, $pwd) !== false) {
+        header("location: ..?page=login&error=emptyinput");
+        exit();
+    }
+
+    loginUser($username, $pwd);
+
+} else if (isset($_GET["logout"])) {
+    session_start();
+    session_unset();
+    session_destroy();
+
+    header("location: ../index.php");
+    exit();
 } else {
     header("location: ..?page=register");
 }

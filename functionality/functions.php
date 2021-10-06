@@ -77,3 +77,36 @@ function createUser($firstname, $lastname, $email, $username, $pwd) {
     header("location: ..?page=register&error=none");
     exit();
 }
+
+function emptyInputLogin($username, $pwd)
+{
+    $result = false;
+    if (empty($username) || empty($pwd)) {
+        $result = true;
+    }
+    return $result;
+}
+
+function loginUser($username, $pwd)
+{
+    $uidExists = uidExists($username, $username);
+
+    if ($uidExists === false) {
+        header("location: ..?page=login&error=wronglogin1");
+        exit();
+    }
+
+    $pwdHashed = $uidExists["usersPwd"];
+    $checkPwd = password_verify($pwd, $pwdHashed);
+
+    if ($checkPwd === false) {
+        header("location: ..?page=login&error=wronglogin2");
+        exit();
+    } else if ($checkPwd === true) {
+        session_start();
+        $_SESSION["userid"] = $uidExists["usersId"];
+        $_SESSION["useruid"] = $uidExists["usersUid"];
+        header("location: ../index.php");
+        exit();
+    }
+}
